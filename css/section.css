@@ -1,6 +1,5 @@
 .section{
-    height: 100vh;
-    width: 100%;
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -40,4 +39,38 @@
 
 .section.seven{
     background-image: url('../media/7.avif');
+}
+
+
+.section__content{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.section__content__title{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.section__content__subtitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+
+.section__content__subtitle a{
+    color: inherit;
+}
+
+.section__content__subtitle a:hover{
+    text-decoration: underline;
+    color: rgba(255, 0, 0, 0.664);
 }
