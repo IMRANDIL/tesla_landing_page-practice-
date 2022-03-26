@@ -55,3 +55,20 @@
     width: 3rem;
     cursor: pointer;
 }
+
+
+.blur__overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(1rem);
+}
+
+.blur__overlay.is__active{
+    display: block;
+}
